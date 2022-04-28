@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .home__container {
+    @apply bg-black w-full h-screen;
+  }
+
+  .date__container {
+    @apply flex justify-center items-center;
+  }
+  
+}
