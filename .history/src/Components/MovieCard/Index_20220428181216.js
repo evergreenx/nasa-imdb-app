@@ -12,7 +12,7 @@ const Index = () => {
         const response = await axiosIMDBInstance.get(
           `/search/movie?api_key=${process.env.REACT_APP_IMDB_API_KEY}&language=en-US&query=NASA&include_adult=false&1`
         );
-
+       
         const data = response.data.results;
 
         setMovieList(data);

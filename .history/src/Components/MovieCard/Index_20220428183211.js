@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import MovieCardItem from "./MovieCardItem";
 import { axiosIMDBInstance } from "../../Utilites/axiosInstance";
 
-const Index = () => {
+const index = () => {
   const [movieList, setMovieList] = useState([]);
   useEffect(() => {
     // GET movies list from IMDB on load of the page
