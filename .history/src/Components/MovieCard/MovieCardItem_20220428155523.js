@@ -1,0 +1,24 @@
+import React from "react";
+
+const baseImgUrl = "https://image.tmdb.org/t/p";
+const size = "w500";
+
+const MovieCardItem = (movie) => {
+  let { title, url } = movie.movie;
+
+  console.log(movie);
+  return (
+    <div className="movie_card_item flex">
+      <h3>{title}</h3>
+
+      <img
+        src={`${baseImgUrl}/${size}${"/oHqKd2jwRgL4BsgOqCv01hekvme.jpg"}`}
+        alt={title}
+      />
+
+      <img src={url} alt={title} />
+    </div>
+  );
+};
+
+export default MovieCardItem;

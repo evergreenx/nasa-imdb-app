@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+
+@layer components {
+  body {
+    /* font-family: "PT Sans Narrow", sans-serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 100%;
+    @apply bg-black w-full;
+  }
+  .home__container {
+  }
+
+  .date__container {
+    @apply text-center text-[#8ecae6] font-bold py-2 text-xl;
+  }
+
+  .today__image__container {
+    @apply w-full;
+  }
+
+  .movie__container {
+    @apply px-10;
+  }
+
+  .movie_card_item {
+    @apply bg-white p-5 rounded-md;
+  }
+
+  .movie__card__poster {
+    @apply w-full min-h-[400px] bg-cover;
+  }
+
+  .movie__card__title {
+    @apply text-center text-2xl font-bold text-[#ffb703] text-[22px] pt-7;
+  }
+
+  .movie__card__description__text {
+    @apply text-[#000000] text-[17px] pt-2;
+  }
+
+  .movie__card__description {
+    @apply mt-3 text-[#000000];
+  }
+
+  .movie__card__description__header {
+    @apply text-[#000000] font-bold;
+  }
+
+  .movie__card__wrapper {
+    @apply grid gap-7 grid-cols-4  justify-center mx-auto;
+  }
+
+  .movie__card__descrition__popularity {
+    @apply pt-4;
+  }
+}
