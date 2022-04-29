@@ -8,6 +8,7 @@ const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
 
+
   useEffect(() => {
     // GET movies details from IMDB on load of the page
 
@@ -93,10 +94,7 @@ const Index = () => {
 
             <div className="movie__details__genres flex space-x-4 lg:text-2xl text-xl font-bold ">
               {genres.map((genre) => (
-                <h1
-                  key={genre.name}
-                  className="movie__details__genre text-[#ffb703] space-x-6 ml-4  "
-                >
+                <h1 className="movie__details__genre text-[#ffb703] space-x-6 ml-4  ">
                   {genre.name}
                 </h1>
               ))}
@@ -150,10 +148,7 @@ const Index = () => {
 
             <div className="movie__details__genres flex space-x-4 lg:text-2xl text-xl font-bold ">
               {production_companies.map((studio) => (
-                <h1
-                  key={studio.id}
-                  className="movie__details__genre text-[#ffb703] space-x-6 ml-4  "
-                >
+                <h1 className="movie__details__genre text-[#ffb703] space-x-6 ml-4  ">
                   {studio.name}
                 </h1>
               ))}
@@ -165,10 +160,7 @@ const Index = () => {
 
             <div className="movie__details__genres flex space-x-4 lg:text-2xl text-xl font-bold ">
               {production_countries.map((country) => (
-                <h1
-                  key={country.name}
-                  className="movie__details__genre text-[#ffb703] space-x-6 ml-4  "
-                >
+                <h1 className="movie__details__genre text-[#ffb703] space-x-6 ml-4  ">
                   {country.name}
                 </h1>
               ))}
@@ -180,10 +172,7 @@ const Index = () => {
 
             <div className="movie__details__genres flex space-x-4 lg:text-2xl text-xl font-bold ">
               {spoken_languages.map((language) => (
-                <h1
-                  key={language.name}
-                  className="movie__details__genre text-[#ffb703] space-x-6 ml-4  "
-                >
+                <h1 className="movie__details__genre text-[#ffb703] space-x-6 ml-4  ">
                   {language.name}
                 </h1>
               ))}

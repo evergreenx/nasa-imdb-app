@@ -7,7 +7,7 @@ const MovieCardItem = (movie) => {
   const baseImgUrl = `https://image.tmdb.org/t/p/`;
   const size = "w500";
 
-  // poster image
+  // poster 
   let poster = `${baseImgUrl}${size}${poster_path}`;
 
   // show default image if no poster is available
