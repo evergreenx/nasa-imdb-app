@@ -1,6 +1,28 @@
-# Getting Started with Create React App
+# Project Title
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NASA-IMDB-APP
+
+## Demo link:
+
+[link](https://bright-alpaca-3da14f.netlify.app//)
+
+## About The App
+
+This application consumes API from NASA and also IMDB to show Nasa related movies.
+
+## Screenshots
+
+![Writing](https://res.cloudinary.com/evergreenx/image/upload/v1651231840/nsas_mk3tfr.png)
+
+## Technologies
+
+i used `react js` and `tailwind css` for styling to build this app.
+
+## Credits
+
+List of contriubutors:
+
+- [Ido Evergreen](idoevergreen.tech)
 
 ## Available Scripts
 
