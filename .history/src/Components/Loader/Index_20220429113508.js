@@ -1,0 +1,20 @@
+import React from 'react'
+
+const Index = () => {
+  return (
+      <div className='bg-black h-screen w-full'>
+          
+
+
+
+          <h1 className=' text-5xl flex items-center justify-center'>
+              Loading data
+          </h1>
+
+
+
+    </div>
+  )
+}
+
+export default Index

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { getUserFullDate } from "../../Utilites/date";
 import { axiosNasaInstance } from "../../Utilites/axiosInstance";
 import MovieCard from "../../Components/MovieCard/Index";
-import Loader from "../../Components/Loader";
+import Loader from "../../Components/Loader/Index";
 
 const Index = () => {
   const [todayImage, setTodayImage] = useState(null);
@@ -31,7 +31,7 @@ const Index = () => {
   }, []);
 
   if (isLoading) {
-    return <Loader />;
+    return <p className="text-white"> loading</p>;
   }
 
   return (

@@ -31,7 +31,7 @@ const Index = () => {
   }, []);
 
   if (isLoading) {
-    return <Loader />;
+    return <Loader>;
   }
 
   return (

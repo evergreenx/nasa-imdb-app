@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { axiosIMDBInstance } from "../../Utilites/axiosInstance";
-import Loader from "../../Components/Loader";
+import 
 
 const Index = () => {
   const [movieInfo, setMovieInfo] = useState("null");
@@ -67,7 +67,7 @@ const Index = () => {
   console.log(movieInfo, "movieInfo");
 
   if (isLoading) {
-    return <Loader />;
+    return <p className="text-white"> loading</p>;
   }
 
   return (

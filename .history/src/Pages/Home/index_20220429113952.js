@@ -30,7 +30,7 @@ const Index = () => {
     getNASAImage();
   }, []);
 
-  if (isLoading) {
+  if (!isLoading) {
     return <Loader />;
   }
 

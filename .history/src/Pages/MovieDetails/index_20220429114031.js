@@ -67,7 +67,7 @@ const Index = () => {
   console.log(movieInfo, "movieInfo");
 
   if (isLoading) {
-    return <Loader />;
+    return;
   }
 
   return (
