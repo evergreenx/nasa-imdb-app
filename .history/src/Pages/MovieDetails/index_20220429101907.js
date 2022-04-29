@@ -47,7 +47,7 @@ const Index = () => {
     tagline,
     spoken_languages,
     vote_average,
-    vote_count,
+    
   } = movieInfo;
 
   const baseImgUrl = `https://image.tmdb.org/t/p/`;
@@ -132,20 +132,6 @@ const Index = () => {
             </h1>
           </div>
 
-          <div class="py-3 lg:text-2xl text-xl">
-            <h1 className="text-white font-bold ">
-              Vote Average:
-              <span className="text-[#ffb703] ml-3">{vote_average} / 10</span>
-            </h1>
-          </div>
-
-          <div class="py-3 lg:text-2xl text-xl">
-            <h1 className="text-white font-bold ">
-              Vote count:
-              <span className="text-[#ffb703] ml-3">{vote_count}</span>
-            </h1>
-          </div>
-
           <div className="flex items-center  lg:text-2xl text-xl">
             <h1 className="text-white font-bold ">Studio:</h1>
 
@@ -184,14 +170,12 @@ const Index = () => {
         </div>
       </div>
 
-      {overview && (
-        <div class="movie__details__desc my-10">
-          <h1 className="text-[#ffb703] font-bold lg:text-2xl text-xl py-6 ">
-            <span className="">Description</span>
-          </h1>
-          <p className="text-white lg:text-2xl text-xl">{overview}</p>
-        </div>
-      )}
+      <div class="movie__details__desc my-10">
+        <h1 className="text-[#ffb703] font-bold lg:text-2xl text-xl py-6 ">
+          <span className="">Description</span>
+        </h1>
+        <p className="text-white lg:text-2xl text-xl">{overview}</p>
+      </div>
 
       <div class="py-3 lg:text-2xl text-xl">
         <h1 className="text-white font-bold ">

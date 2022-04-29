@@ -3,7 +3,7 @@ import AppRoutes from "./Route/index";
 function App() {
   return (
     <>
-      {/* Application route */}
+      {/* Application  */}
       <AppRoutes />
     </>
   );

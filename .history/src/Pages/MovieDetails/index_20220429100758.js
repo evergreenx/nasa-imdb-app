@@ -45,9 +45,6 @@ const Index = () => {
     runtime,
     production_countries,
     tagline,
-    spoken_languages,
-    vote_average,
-    vote_count,
   } = movieInfo;
 
   const baseImgUrl = `https://image.tmdb.org/t/p/`;
@@ -74,7 +71,7 @@ const Index = () => {
       <div class="movie__details__top">
         <div class="movie__details__image__containerx">
           <img
-            className=" movie__details__image"
+            className=" movie__details__image  h-56"
             src={poster}
             alt="NASA today"
           />
@@ -132,20 +129,6 @@ const Index = () => {
             </h1>
           </div>
 
-          <div class="py-3 lg:text-2xl text-xl">
-            <h1 className="text-white font-bold ">
-              Vote Average:
-              <span className="text-[#ffb703] ml-3">{vote_average} / 10</span>
-            </h1>
-          </div>
-
-          <div class="py-3 lg:text-2xl text-xl">
-            <h1 className="text-white font-bold ">
-              Vote count:
-              <span className="text-[#ffb703] ml-3">{vote_count}</span>
-            </h1>
-          </div>
-
           <div className="flex items-center  lg:text-2xl text-xl">
             <h1 className="text-white font-bold ">Studio:</h1>
 
@@ -169,29 +152,15 @@ const Index = () => {
               ))}
             </div>
           </div>
-
-          <div className="flex items-center  lg:text-2xl text-xl py-3">
-            <h1 className="text-white font-bold ">Production country:</h1>
-
-            <div className="movie__details__genres flex space-x-4 lg:text-2xl text-xl font-bold ">
-              {spoken_languages.map((language) => (
-                <h1 className="movie__details__genre text-[#ffb703] space-x-6 ml-4  ">
-                  {language.name}
-                </h1>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
 
-      {overview && (
-        <div class="movie__details__desc my-10">
-          <h1 className="text-[#ffb703] font-bold lg:text-2xl text-xl py-6 ">
-            <span className="">Description</span>
-          </h1>
-          <p className="text-white lg:text-2xl text-xl">{overview}</p>
-        </div>
-      )}
+      <div class="movie__details__desc my-10">
+        <h1 className="text-[#ffb703] font-bold lg:text-2xl text-xl py-6 ">
+          <span className="">Description</span>
+        </h1>
+        <p className="text-white lg:text-2xl text-xl">{overview}</p>
+      </div>
 
       <div class="py-3 lg:text-2xl text-xl">
         <h1 className="text-white font-bold ">
